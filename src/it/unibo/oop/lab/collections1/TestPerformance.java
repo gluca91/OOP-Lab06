@@ -12,11 +12,11 @@ public final class TestPerformance {
     private static final int ELEMS = 1_000_000;
     private static final int TO_MS = 1_000_000;
 
-    private TestPerformance() { }
+    private TestPerformance() {
+    }
 
     /**
-     * @param s
-     *            ignored
+     * @param s ignored
      */
     public static void main(final String... s) {
         /*
@@ -37,9 +37,9 @@ public final class TestPerformance {
          * Compute the time and print result
          */
         time = System.nanoTime() - time;
-        System.out.println("Converting " + ELEMS
-                + " int to String and inserting them in a Set took " + time
-                + "ns (" + time / TO_MS + "ms)");
-        System.out.println(set);
+        System.out.println("Converting " + ELEMS + " int to String and inserting them in a Set took " + time + "ns ("
+                + time / TO_MS + "ms)");
+        System.out.print(set);
+        System.out.println("finito");
     }
 }
