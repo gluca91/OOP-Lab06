@@ -27,21 +27,7 @@ public final class TestSocialNetworkUser {
      * @param args ignored
      */
     public static void main(final String... args) {
-        /*
-         * TODO create 5 social network users (SocialNetworkUser)
-         * 
-         * Kevin Bacon,kbacon, 56
-         * 
-         * Denzel Washington, dwashington, 59
-         * 
-         * Malcom Gladwell, mgladwell, 51
-         * 
-         * Nicholas Taleb, ntaleb, 54
-         * 
-         * And one regular UserImpl (User)
-         * 
-         * * Adam Smith, asmith, (no age)
-         */
+
         final SocialNetworkUser<User> kbacon = new SocialNetworkUserImpl<>("Kevin", "Bacon", "kbacon", 56);
         final SocialNetworkUser<User> dwashington = new SocialNetworkUserImpl<>("Denzel", "Washington", "dwashington",
                 59);

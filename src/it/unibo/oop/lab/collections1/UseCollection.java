@@ -154,7 +154,7 @@ public final class UseCollection {
             set = new TreeSet<Pair<Integer, String>>(new MyPairCompare());
 
             tmpSet = new TreeSet<Pair<Integer, CountMe>>((i, j) -> i.getFirst() - j.getFirst());
-            
+
             // D, C, B, A, E
 //            exec(e, () -> result = map.values().stream().collect(Collectors.summingLong(Long::longValue)));
 //            exec(a, () -> result = map.values().stream().mapToLong(Long::longValue).sum());
@@ -162,21 +162,18 @@ public final class UseCollection {
 //            exec(d, () -> result = map.values().stream().reduce(0L, Long::sum));
 //            exec(b, () -> result = map.values().stream().reduce((i, j) -> i = i + j).get());
 
-            
 //            exec(e, () -> result = map.values().stream().collect(Collectors.summingLong(Long::longValue)));
 //            exec(a, () -> result = map.values().stream().mapToLong(Long::longValue).sum());
 //            exec(b, () -> result = map.values().stream().reduce((i, j) -> i = i + j).get());
 //            exec(c, () -> result = map.values().stream().reduce(0L, (i, j) -> i + j));
 //            exec(d, () -> result = map.values().stream().reduce(0L, Long::sum));
 
-            
 //            exec(c, () -> result = map.values().stream().reduce(0L, (i, j) -> i + j));
 //            exec(d, () -> result = map.values().stream().reduce(0L, Long::sum));
 //            exec(b, () -> result = map.values().stream().reduce((i, j) -> i = i + j).get());
 //            exec(a, () -> result = map.values().stream().mapToLong(Long::longValue).sum());
 //            exec(e, () -> result = map.values().stream().collect(Collectors.summingLong(Long::longValue)));
 
-            
             exec(d, () -> result = map.values().stream().reduce(0L, Long::sum));
             exec(c, () -> result = map.values().stream().reduce(0L, (i, j) -> i + j));
             exec(b, () -> result = map.values().stream().reduce((i, j) -> i = i + j).get());
@@ -200,7 +197,6 @@ public final class UseCollection {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException z) {
-                // TODO Auto-generated catch block
                 z.printStackTrace();
             }
 
